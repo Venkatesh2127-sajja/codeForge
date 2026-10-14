@@ -1,0 +1,229 @@
+.lesson-content {
+  width: 100%;
+}
+
+
+/* =========================
+   LESSON HEADER
+========================= */
+
+.lesson-header {
+  margin-bottom: 35px;
+}
+
+.lesson-breadcrumb {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.lesson-header h1 {
+  margin: 0 0 14px;
+  font-size: 34px;
+  line-height: 1.25;
+}
+
+.lesson-description {
+  margin: 0;
+  max-width: 800px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.lesson-meta {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.lesson-meta span {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+
+/* =========================
+   LESSON BODY
+========================= */
+
+.lesson-body {
+  width: 100%;
+}
+
+.lesson-section {
+  margin-bottom: 42px;
+}
+
+.lesson-section h2 {
+  margin: 0 0 18px;
+  font-size: 25px;
+  line-height: 1.4;
+}
+
+.lesson-section p {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.lesson-section ul {
+  margin: 16px 0 20px;
+  padding-left: 25px;
+}
+
+.lesson-section li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   CODE BLOCK
+========================= */
+
+.lesson-code {
+  margin: 22px 0;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: #1e1e1e;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  background: #2a2a2a;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.code-header span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #d4d4d4;
+  text-transform: lowercase;
+}
+
+.lesson-code pre {
+  margin: 0;
+  padding: 18px;
+  overflow-x: auto;
+}
+
+.lesson-code code {
+  display: block;
+  color: #f9fafb;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre;
+}
+
+
+/* =========================
+   OUTPUT BLOCK
+========================= */
+
+.lesson-output {
+  margin: 20px 0;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--surface);
+}
+
+.output-header {
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.lesson-output pre {
+  margin: 0;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+
+/* =========================
+   INTERVIEW QUESTIONS
+========================= */
+
+.lesson-interview-questions {
+  margin-top: 30px;
+}
+
+.interview-title {
+  margin-bottom: 20px !important;
+}
+
+.lesson-interview-question {
+  margin-bottom: 20px;
+  padding: 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.lesson-interview-question h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.lesson-interview-question p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .lesson-header h1 {
+    font-size: 28px;
+  }
+
+  .lesson-description {
+    font-size: 16px;
+  }
+
+  .lesson-section h2 {
+    font-size: 22px;
+  }
+
+  .lesson-section p {
+    font-size: 15px;
+  }
+
+  .lesson-code pre {
+    padding: 14px;
+  }
+
+  .lesson-code code {
+    font-size: 13px;
+  }
+
+  .lesson-meta {
+    flex-wrap: wrap;
+  }
+
+}

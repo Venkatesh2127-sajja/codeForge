@@ -1,0 +1,224 @@
+/* =========================================
+   Course Sidebar
+========================================= */
+
+.course-sidebar {
+  position: sticky;
+
+  top: 90px;
+
+  width: 270px;
+
+  height: calc(100vh - 110px);
+
+  overflow-y: auto;
+
+  padding-right: 15px;
+
+  border-right: 1px solid var(--border-color);
+}
+
+
+/* =========================================
+   Sidebar Header
+========================================= */
+
+.course-sidebar-header {
+  padding-bottom: 18px;
+
+  margin-bottom: 10px;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: var(--text-secondary);
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+}
+
+.course-sidebar-header h2 {
+  margin: 0;
+
+  color: var(--text-primary);
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   Sidebar Navigation
+========================================= */
+
+.course-sidebar-nav {
+  display: flex;
+
+  flex-direction: column;
+
+  padding-top: 5px;
+}
+
+
+/* =========================================
+   Topic
+========================================= */
+
+.sidebar-topic {
+  margin: 2px 0 12px;
+}
+
+
+/* =========================================
+   Topic Heading
+========================================= */
+
+.sidebar-topic h3 {
+  margin: 14px 0 6px;
+
+  padding: 0 10px;
+
+  color: var(--text-primary);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   Lessons
+========================================= */
+
+.sidebar-lessons {
+  display: flex;
+
+  flex-direction: column;
+
+  padding-left: 10px;
+}
+
+
+/* =========================================
+   Individual Lesson
+========================================= */
+
+.sidebar-lesson {
+  display: block;
+
+  padding: 6px 10px;
+
+  color: var(--text-secondary);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  border-radius: 5px;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+
+/* =========================================
+   Lesson Hover
+========================================= */
+
+.sidebar-lesson:hover {
+  background-color: var(--surface);
+
+  color: var(--primary-color);
+}
+
+
+/* =========================================
+   Active Lesson
+========================================= */
+
+.sidebar-lesson.active {
+  background-color: #eff6ff;
+
+  color: var(--primary-color);
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   Scrollbar
+========================================= */
+
+.course-sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.course-sidebar::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+
+  border-radius: 10px;
+}
+
+.course-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* =========================================
+   Responsive - Tablet
+========================================= */
+
+@media (max-width: 900px) {
+
+  .course-sidebar {
+    width: 220px;
+  }
+
+}
+
+
+/* =========================================
+   Responsive - Mobile
+========================================= */
+
+@media (max-width: 700px) {
+
+  .course-sidebar {
+    position: relative;
+
+    top: 0;
+
+    width: 100%;
+
+    height: auto;
+
+    max-height: 350px;
+
+    margin-bottom: 30px;
+
+    padding-right: 0;
+
+    padding-bottom: 20px;
+
+    border-right: none;
+
+    border-bottom: 1px solid var(--border-color);
+  }
+
+}
